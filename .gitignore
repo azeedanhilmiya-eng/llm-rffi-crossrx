@@ -1,0 +1,13 @@
+# code only: no data, results, weights or logs
+*.pt
+*.npz
+*.npy
+*.pkl
+*.h5
+*.log
+*.json
+results/
+runs/
+weights/
+__pycache__/
+.DS_Store
