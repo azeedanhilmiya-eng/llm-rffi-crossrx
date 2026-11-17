@@ -1,13 +1,15 @@
-# code only: no data, results, weights or logs
+# large or machine-specific files
 *.pt
-*.npz
-*.npy
+*.pth
 *.pkl
 *.h5
-*.log
-*.json
-results/
-runs/
+*.npy
+*.###
 weights/
+runs/
 __pycache__/
 .DS_Store
+# outputs written next to the scripts (results/ holds the curated copies)
+/*.json
+/*.npz
+/*.log

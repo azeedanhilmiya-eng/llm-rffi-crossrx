@@ -21,12 +21,15 @@
 | `setup_qwen.sh` | 建环境、从 ModelScope 下载 Qwen3.5-0.8B / 4B |
 | `run_chain.py`、`pool_dyn.py` | 按顺序 / 并行跑任务的小工具 |
 
+## 结果
+
+已跑完的结果（json、每个测试样本的概率、日志）和汇总表在 [`results/`](results/README.md)。
+
 ## 不在仓库里的东西
 
 - IB-RFF 作者代码（`main.py`、`utils/` 等），运行时用 `--code` 指定目录；
 - WiSig ManyRx 数据；
-- 千问模型权重（见 `setup_qwen.sh`）；
-- 实验结果、权重和日志。
+- 千问模型权重（见 `setup_qwen.sh`）和训练好的权重（太大）。
 
 ## 用法
 

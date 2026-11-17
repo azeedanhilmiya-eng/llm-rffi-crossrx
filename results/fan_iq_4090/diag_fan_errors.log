@@ -1,0 +1,98 @@
+loaded 128 units, 125043 signals, shape (1000, 2, 256), dtype float64, 3s
+units.json written, 12s
+r0 s2023 seen_same 91.96 seen_d34 89.05 CR 91.87 CRD 89.65  (14s)
+r0 s2023 probes CR: clean 91.9 phase_pi/4 91.8 phase_pi/2 92.0 phase_pi 91.9 phase_random 91.9 tshift_-2 91.5 tshift_-1 91.3 tshift_-0.5 91.6 tshift_-0.25 91.8 tshift_+0.25 91.9 tshift_+0.5 91.8 tshift_+1 91.5 tshift_+2 91.1 fshift_-2kHz 89.2 fshift_-1kHz 91.4 fshift_+1kHz 92.0 fshift_+2kHz 91.7 noise_0.05 78.8 noise_0.1 67.9 noise_0.2 54.3 noise_0.4 40.6 dc_0.05 47.3 dc_0.1 18.6 iq_0.5dB_2deg 92.0 iq_1dB_5deg 91.9 tilt_-3dB 92.0 tilt_-1dB 91.9 tilt_+1dB 91.8 tilt_+3dB 91.7  (26s)
+r0 s2023 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r0 s2024 seen_same 93.09 seen_d34 87.92 CR 94.47 CRD 88.60  (27s)
+r0 s2024 probes CR: clean 94.5 phase_pi/4 94.5 phase_pi/2 94.6 phase_pi 94.6 phase_random 94.6 tshift_-2 93.8 tshift_-1 94.4 tshift_-0.5 94.5 tshift_-0.25 94.5 tshift_+0.25 94.4 tshift_+0.5 94.3 tshift_+1 94.0 tshift_+2 93.3 fshift_-2kHz 92.0 fshift_-1kHz 93.8 fshift_+1kHz 94.5 fshift_+2kHz 94.0 noise_0.05 84.4 noise_0.1 75.0 noise_0.2 60.2 noise_0.4 42.9 dc_0.05 59.6 dc_0.1 29.3 iq_0.5dB_2deg 94.4 iq_1dB_5deg 94.1 tilt_-3dB 94.4 tilt_-1dB 94.5 tilt_+1dB 94.5 tilt_+3dB 94.5  (41s)
+r0 s2024 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r0 s2025 seen_same 93.03 seen_d34 90.40 CR 92.42 CRD 89.65  (42s)
+r0 s2025 probes CR: clean 92.4 phase_pi/4 92.2 phase_pi/2 92.4 phase_pi 92.6 phase_random 92.4 tshift_-2 91.9 tshift_-1 92.4 tshift_-0.5 92.6 tshift_-0.25 92.6 tshift_+0.25 92.4 tshift_+0.5 92.4 tshift_+1 92.2 tshift_+2 91.7 fshift_-2kHz 87.6 fshift_-1kHz 90.6 fshift_+1kHz 92.6 fshift_+2kHz 91.7 noise_0.05 79.1 noise_0.1 68.2 noise_0.2 54.3 noise_0.4 39.7 dc_0.05 58.7 dc_0.1 28.3 iq_0.5dB_2deg 92.5 iq_1dB_5deg 92.0 tilt_-3dB 92.3 tilt_-1dB 92.4 tilt_+1dB 92.5 tilt_+3dB 92.5  (52s)
+r0 s2025 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r1 s2023 seen_same 95.57 seen_d34 92.05 CR 84.56 CRD 86.51  (53s)
+r1 s2023 probes CR: clean 84.6 phase_pi/4 84.4 phase_pi/2 84.3 phase_pi 84.6 phase_random 84.4 tshift_-2 83.6 tshift_-1 83.8 tshift_-0.5 84.2 tshift_-0.25 84.4 tshift_+0.25 84.8 tshift_+0.5 84.9 tshift_+1 84.5 tshift_+2 83.9 fshift_-2kHz 84.5 fshift_-1kHz 84.4 fshift_+1kHz 84.5 fshift_+2kHz 84.0 noise_0.05 75.8 noise_0.1 67.0 noise_0.2 54.4 noise_0.4 40.9 dc_0.05 52.6 dc_0.1 27.5 iq_0.5dB_2deg 84.8 iq_1dB_5deg 84.8 tilt_-3dB 84.5 tilt_-1dB 84.6 tilt_+1dB 84.6 tilt_+3dB 84.7  (67s)
+r1 s2023 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r1 s2024 seen_same 93.94 seen_d34 87.73 CR 83.89 CRD 84.21  (67s)
+r1 s2024 probes CR: clean 83.9 phase_pi/4 83.8 phase_pi/2 83.7 phase_pi 83.8 phase_random 83.8 tshift_-2 83.7 tshift_-1 84.0 tshift_-0.5 84.0 tshift_-0.25 83.9 tshift_+0.25 83.8 tshift_+0.5 83.7 tshift_+1 83.5 tshift_+2 83.2 fshift_-2kHz 82.7 fshift_-1kHz 83.8 fshift_+1kHz 83.3 fshift_+2kHz 81.1 noise_0.05 77.7 noise_0.1 69.9 noise_0.2 57.0 noise_0.4 42.5 dc_0.05 53.3 dc_0.1 32.5 iq_0.5dB_2deg 84.1 iq_1dB_5deg 84.1 tilt_-3dB 83.4 tilt_-1dB 83.6 tilt_+1dB 84.0 tilt_+3dB 84.2  (81s)
+r1 s2024 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r1 s2025 seen_same 95.83 seen_d34 91.33 CR 85.23 CRD 87.46  (82s)
+r1 s2025 probes CR: clean 85.2 phase_pi/4 85.1 phase_pi/2 84.9 phase_pi 85.1 phase_random 85.1 tshift_-2 84.5 tshift_-1 84.9 tshift_-0.5 85.1 tshift_-0.25 85.1 tshift_+0.25 85.2 tshift_+0.5 85.1 tshift_+1 85.2 tshift_+2 85.4 fshift_-2kHz 84.5 fshift_-1kHz 84.9 fshift_+1kHz 85.4 fshift_+2kHz 85.2 noise_0.05 77.2 noise_0.1 68.1 noise_0.2 56.1 noise_0.4 43.4 dc_0.05 53.8 dc_0.1 27.8 iq_0.5dB_2deg 85.4 iq_1dB_5deg 85.5 tilt_-3dB 85.2 tilt_-1dB 85.2 tilt_+1dB 85.2 tilt_+3dB 85.3  (94s)
+r1 s2025 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r2 s2023 seen_same 92.38 seen_d34 90.33 CR 91.54 CRD 90.42  (94s)
+r2 s2023 probes CR: clean 91.5 phase_pi/4 91.4 phase_pi/2 91.2 phase_pi 91.3 phase_random 91.4 tshift_-2 91.5 tshift_-1 91.2 tshift_-0.5 91.4 tshift_-0.25 91.4 tshift_+0.25 91.5 tshift_+0.5 91.6 tshift_+1 91.5 tshift_+2 91.2 fshift_-2kHz 91.1 fshift_-1kHz 91.5 fshift_+1kHz 91.4 fshift_+2kHz 90.4 noise_0.05 81.3 noise_0.1 71.3 noise_0.2 57.0 noise_0.4 42.0 dc_0.05 56.4 dc_0.1 35.0 iq_0.5dB_2deg 91.8 iq_1dB_5deg 91.5 tilt_-3dB 91.3 tilt_-1dB 91.4 tilt_+1dB 91.6 tilt_+3dB 91.7  (107s)
+r2 s2023 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r2 s2024 seen_same 93.37 seen_d34 90.22 CR 93.67 CRD 92.53  (108s)
+r2 s2024 probes CR: clean 93.7 phase_pi/4 93.7 phase_pi/2 93.7 phase_pi 93.7 phase_random 93.7 tshift_-2 93.2 tshift_-1 93.5 tshift_-0.5 93.6 tshift_-0.25 93.6 tshift_+0.25 93.7 tshift_+0.5 93.7 tshift_+1 93.7 tshift_+2 93.6 fshift_-2kHz 92.6 fshift_-1kHz 93.4 fshift_+1kHz 93.1 fshift_+2kHz 91.7 noise_0.05 83.3 noise_0.1 72.3 noise_0.2 59.5 noise_0.4 45.8 dc_0.05 63.2 dc_0.1 32.1 iq_0.5dB_2deg 93.6 iq_1dB_5deg 92.9 tilt_-3dB 93.4 tilt_-1dB 93.5 tilt_+1dB 93.7 tilt_+3dB 93.8  (118s)
+r2 s2024 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r2 s2025 seen_same 93.47 seen_d34 92.26 CR 93.82 CRD 93.48  (119s)
+r2 s2025 probes CR: clean 93.8 phase_pi/4 94.0 phase_pi/2 93.7 phase_pi 93.2 phase_random 93.6 tshift_-2 93.2 tshift_-1 93.6 tshift_-0.5 93.8 tshift_-0.25 93.9 tshift_+0.25 94.0 tshift_+0.5 94.0 tshift_+1 93.9 tshift_+2 93.7 fshift_-2kHz 93.8 fshift_-1kHz 94.0 fshift_+1kHz 93.3 fshift_+2kHz 92.1 noise_0.05 84.5 noise_0.1 74.9 noise_0.2 61.4 noise_0.4 47.0 dc_0.05 60.8 dc_0.1 29.7 iq_0.5dB_2deg 93.7 iq_1dB_5deg 93.2 tilt_-3dB 93.7 tilt_-1dB 93.8 tilt_+1dB 93.8 tilt_+3dB 93.9  (130s)
+r2 s2025 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r3 s2023 seen_same 93.53 seen_d34 88.97 CR 88.51 CRD 82.84  (130s)
+r3 s2023 probes CR: clean 88.5 phase_pi/4 88.4 phase_pi/2 88.3 phase_pi 88.4 phase_random 88.5 tshift_-2 87.2 tshift_-1 88.1 tshift_-0.5 88.2 tshift_-0.25 88.4 tshift_+0.25 88.5 tshift_+0.5 88.5 tshift_+1 88.5 tshift_+2 88.4 fshift_-2kHz 87.4 fshift_-1kHz 88.2 fshift_+1kHz 88.5 fshift_+2kHz 88.5 noise_0.05 77.4 noise_0.1 65.1 noise_0.2 50.1 noise_0.4 37.0 dc_0.05 62.9 dc_0.1 31.6 iq_0.5dB_2deg 88.7 iq_1dB_5deg 88.4 tilt_-3dB 88.3 tilt_-1dB 88.4 tilt_+1dB 88.5 tilt_+3dB 88.7  (142s)
+r3 s2023 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r3 s2024 seen_same 91.98 seen_d34 88.35 CR 85.98 CRD 80.31  (143s)
+r3 s2024 probes CR: clean 86.0 phase_pi/4 85.9 phase_pi/2 85.9 phase_pi 86.2 phase_random 86.1 tshift_-2 84.8 tshift_-1 85.2 tshift_-0.5 85.4 tshift_-0.25 85.7 tshift_+0.25 86.2 tshift_+0.5 86.1 tshift_+1 85.9 tshift_+2 85.1 fshift_-2kHz 83.9 fshift_-1kHz 85.7 fshift_+1kHz 85.4 fshift_+2kHz 83.0 noise_0.05 77.3 noise_0.1 67.2 noise_0.2 54.6 noise_0.4 42.1 dc_0.05 54.5 dc_0.1 37.2 iq_0.5dB_2deg 86.0 iq_1dB_5deg 85.5 tilt_-3dB 86.0 tilt_-1dB 86.0 tilt_+1dB 86.0 tilt_+3dB 86.1  (153s)
+r3 s2024 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+r3 s2025 seen_same 94.45 seen_d34 91.58 CR 89.72 CRD 85.53  (154s)
+r3 s2025 probes CR: clean 89.7 phase_pi/4 89.5 phase_pi/2 89.5 phase_pi 89.5 phase_random 89.6 tshift_-2 89.2 tshift_-1 89.6 tshift_-0.5 89.7 tshift_-0.25 89.6 tshift_+0.25 89.7 tshift_+0.5 89.7 tshift_+1 89.5 tshift_+2 89.3 fshift_-2kHz 89.1 fshift_-1kHz 89.5 fshift_+1kHz 89.6 fshift_+2kHz 89.5 noise_0.05 78.2 noise_0.1 67.1 noise_0.2 53.4 noise_0.4 38.8 dc_0.05 60.5 dc_0.1 37.3 iq_0.5dB_2deg 89.7 iq_1dB_5deg 89.7 tilt_-3dB 89.6 tilt_-1dB 89.7 tilt_+1dB 89.7 tilt_+3dB 89.8  (165s)
+r3 s2025 BN: {"has_bn": false, "norm_layers": ["LayerNorm"]}
+
+== four conditions per fold (mean over seeds, %)
+  fold 0: seen_same 92.69  seen_d34 89.12  CR 92.92  CRD 89.30
+  fold 1: seen_same 95.11  seen_d34 90.37  CR 84.56  CRD 86.06
+  fold 2: seen_same 93.07  seen_d34 90.93  CR 93.01  CRD 92.14
+  fold 3: seen_same 93.32  seen_d34 89.63  CR 88.07  CRD 82.89
+== four conditions per receiver model (mean over folds/seeds, %)
+  seen_same: all 93.55  N210 97.59  B210 87.34  X310 92.04
+  seen_d34: all 90.02  N210 93.94  B210 86.43  X310 87.33
+  CR: all 89.64  N210 95.13  B210 85.91  X310 87.00
+  CRD: all 87.60  N210 93.54  B210 87.67  X310 84.20
+== test receivers (CR / CRD, %)
+  [ 0] 1-1    N210 fold 0: 92.7 / 83.1
+  [ 1] 1-19   N210 fold 0: 88.8 / 85.5
+  [ 2] 1-20   N210 fold 0: 92.6 / 87.3
+  [ 3] 2-1    N210 fold 0: 91.2 / 93.2
+  [ 4] 2-19   N210 fold 0: 96.3 / 91.1
+  [ 5] 3-19   B210 fold 0: 91.9 / 93.6
+  [ 6] 7-7    N210 fold 0: 94.7 / 89.7
+  [ 7] 7-14   N210 fold 0: 95.5 / 91.2
+  [ 8] 8-7    B210 fold 1: 76.4 / 77.5
+  [ 9] 8-8    N210 fold 1: 98.3 / 99.2
+  [10] 8-14   B210 fold 1: 67.4 / 75.1
+  [11] 13-7   B210 fold 1: 81.2 / 79.6
+  [12] 13-14  B210 fold 1: 89.9 / 91.1
+  [13] 14-7   N210 fold 1: 98.2 / 98.4
+  [14] 18-2   B210 fold 1: 86.5 / 85.7
+  [15] 18-19  B210 fold 1: 78.1 / 81.3
+  [16] 19-1   N210 fold 2: 93.8 / 91.4
+  [17] 19-2   N210 fold 2: 93.8 / 95.7
+  [18] 19-19  N210 fold 2: 96.2 / 94.4
+  [19] 19-20  N210 fold 2: 92.6 / 92.9
+  [20] 20-1   N210 fold 2: 93.9 / 96.6
+  [21] 20-19  N210 fold 2: 96.1 / 92.0
+  [22] 20-20  N210 fold 2: 92.1 / 88.7
+  [23] 23-1   X310 fold 2: 85.9 / 85.5
+  [24] 23-3   X310 fold 3: 86.3 / 75.0
+  [25] 23-5   X310 fold 3: 91.1 / 86.9
+  [26] 23-6   X310 fold 3: 91.6 / 91.8
+  [27] 23-7   X310 fold 3: 93.0 / 83.2
+  [28] 24-5   X310 fold 3: 74.1 / 62.8
+  [29] 24-6   X310 fold 3: 87.1 / 82.7
+  [30] 24-13  X310 fold 3: 89.5 / 93.5
+  [31] 24-16  X310 fold 3: 91.0 / 87.9
+== top confusions
+  r0_CR: err 3356/47400  3->2 578, 5->4 328, 7->8 302, 4->5 254
+  r0_CRD: err 5071/47400  4->1 2132, 4->2 770, 6->3 398, 3->2 299
+  r1_CR: err 7319/47400  9->5 468, 2->6 289, 0->8 276, 0->1 250
+  r1_CRD: err 6609/47400  4->1 525, 9->5 298, 9->4 271, 0->1 205
+  r2_CR: err 3270/46800  9->5 346, 0->8 236, 2->0 218, 4->5 202
+  r2_CRD: err 3724/47400  9->5 306, 4->1 238, 4->5 238, 0->8 215
+  r3_CR: err 5393/45204  8->0 307, 9->2 300, 2->0 292, 8->7 290
+  r3_CRD: err 7892/46125  4->1 559, 5->4 360, 9->5 339, 8->7 325
+== coherence vs accuracy: {"CR": {"all": {"n": 64, "pearson": 0.6029498377876286, "spearman": 0.7805950160197316}, "N210": {"n": 32, "pearson": 0.5504591929232402, "spearman": 0.5773460410557184}, "B210": {"n": 14, "pearson": -0.15243429468328407, "spearman": 0.12967032967032965}, "X310": {"n": 18, "pearson": 0.4499522163977545, "spearman": 0.6855963742766025}}, "CRD": {"all": {"n": 64, "pearson": 0.5105096909323342, "spearman": 0.5221044439198838}, "N210": {"n": 32, "pearson": 0.21078931388215097, "spearman": 0.15139296187683285}, "B210": {"n": 14, "pearson": -0.11129599560817911, "spearman": -0.0945054945054945}, "X310": {"n": 18, "pearson": 0.5062190518863179, "spearman": 0.5761487603107593}}, "seen_d34": {"all": {"n": 192, "pearson": 0.5723836942909861, "spearman": 0.558629603585949}, "N210": {"n": 96, "pearson": 0.13380185659530763, "spearman": 0.1814961997894094}, "B210": {"n": 42, "pearson": -0.17835159734581024, "spearman": -0.20174669610411342}, "X310": {"n": 54, "pearson": 0.594650431987878, "spearman": 0.6869614497642405}}}
+== probes on CR (drop vs clean, points):
+  phase_pi/4 -0.08  phase_pi/2 -0.13  phase_pi -0.05  phase_random -0.05  tshift_-2 -0.62  tshift_-1 -0.31  tshift_-0.5 -0.13  tshift_-0.25 -0.05  tshift_+0.25 +0.02  tshift_+0.5 +0.01  tshift_+1 -0.16  tshift_+2 -0.48  fshift_-2kHz -1.44  fshift_-1kHz -0.37  fshift_+1kHz -0.18  fshift_+2kHz -1.06  noise_0.05 -10.07  noise_0.1 -20.15  noise_0.2 -33.61  noise_0.4 -47.74  dc_0.05 -32.67  dc_0.1 -59.05  iq_0.5dB_2deg +0.07  iq_1dB_5deg -0.17  tilt_-3dB -0.13  tilt_-1dB -0.07  tilt_+1dB +0.03  tilt_+3dB +0.09
+== probes on seen_same (drop vs clean, points):
+  phase_pi/4 -0.12  phase_pi/2 -0.24  phase_pi -0.28  phase_random -0.20  tshift_-2 -0.84  tshift_-1 -0.39  tshift_-0.5 -0.14  tshift_-0.25 -0.03  tshift_+0.25 -0.02  tshift_+0.5 -0.09  tshift_+1 -0.24  tshift_+2 -0.63  fshift_-2kHz -0.86  fshift_-1kHz -0.16  fshift_+1kHz -0.13  fshift_+2kHz -0.78  noise_0.05 -9.26  noise_0.1 -19.89  noise_0.2 -34.19  noise_0.4 -49.21  dc_0.05 -33.24  dc_0.1 -61.46  iq_0.5dB_2deg +0.09  iq_1dB_5deg -0.04  tilt_-3dB -0.09  tilt_-1dB -0.03  tilt_+1dB +0.01  tilt_+3dB +0.07
+== BN: {"r0_s2023": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r0_s2024": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r0_s2025": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r1_s2023": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r1_s2024": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r1_s2025": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r2_s2023": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r2_s2024": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r2_s2025": {"has_bn": false, "norm_layers": ["LayerNorm"]}, "r3_s2023": {"has_bn": false, "norm_layers": ["Lay
+DONE 165s
