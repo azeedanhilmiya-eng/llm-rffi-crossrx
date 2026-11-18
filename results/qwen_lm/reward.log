@@ -1,0 +1,477 @@
+nohup: 忽略输入
+== 2026年 11月 17日 星期二 10:49:19 CST waiting for pid 400384
+== 2026年 11月 17日 星期二 16:18:19 CST pid 400384 ended; last lines of freq4.log:
+[qwen_lm lm_freq_grpo_r3_s2023    1759s] saved best (epoch 2) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_grpo_r3_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_r3_s2023    1759s] DONE
+== 2026年 11月 17日 星期二 16:17:36 CST CHAIN_DONE
+1135 MiB, 24564 MiB, 8 %
+== 2026年 11月 17日 星期二 16:18:19 CST C1 sftc all
+[qwen_lm lm_freq_sftc_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_sftc_r0_s2023       1s] units all: rxA [8, 9, 10, 11, 13, 15, 17, 18, 20, 21, 22, 23, 25, 26, 28, 29, 30, 31] rxB [12, 14, 16, 19, 24, 27]; this stage trains on 32527 packets, selects on 13941
+[qwen_lm lm_freq_sftc_r0_s2023       2s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_sftc_r0_s2023       2s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_sftc_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  93%|█████████▎| 440/473 [00:00<00:00, 4390.83it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 4523.33it/s]
+[qwen_lm lm_freq_sftc_r0_s2023       5s] loaded /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sft_r0_s2023.pt (epoch 6)
+[qwen_lm lm_freq_sftc_r0_s2023       5s] model Qwen3.5-0.8B H=1024 emb_rms=0.0197 tied lm_head True params 752.4 M (trainable 752.43 M, LoRA modules 0) layers 24 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_sftc_r0_s2023      37s] ep 0 (SFT start) val 0.1134 / 92.48% (free 92.48)  * best
+[qwen_lm lm_freq_sftc_r0_s2023      44s]   step 1 loss 0.0990 7.30 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023      45s]   step 2 loss 0.0785 4.07 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023      46s]   step 3 loss 0.0691 3.01 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     147s]   step 100 loss 0.0717 1.09 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     235s]   step 200 loss 0.0683 0.99 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     311s] ep 1 train 0.0655 / 95.58%  val 0.1100 / 93.09% (free 93.09)  lr 3.00e-06  273s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sftc_r0_s2023     351s]   step 300 loss 0.0550 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     439s]   step 400 loss 0.0526 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     543s]   step 500 loss 0.0514 0.95 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     572s] ep 2 train 0.0511 / 96.46%  val 0.1225 / 93.01% (free 93.01)  lr 3.00e-06  261s  mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     652s]   step 600 loss 0.0444 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     740s]   step 700 loss 0.0412 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     818s] ep 3 train 0.0409 / 97.14%  val 0.1460 / 93.03% (free 93.03)  lr 3.00e-06  246s  mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     849s]   step 800 loss 0.0383 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023     953s]   step 900 loss 0.0349 1.00 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023    1041s]   step 1000 loss 0.0337 0.95 s/step mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023    1079s] ep 4 train 0.0334 / 97.63%  val 0.1783 / 93.00% (free 93.00)  lr 3.00e-06  261s  mem 14.3 GB
+[qwen_lm lm_freq_sftc_r0_s2023    1079s] stop at epoch 4 (early stopping), best 93.0851 at epoch 1
+[qwen_lm lm_freq_sftc_r0_s2023    1221s] eval seen_same 93.08(free 93.08) seen_d34 89.85(free 89.85) CR 92.87(free 92.87) CRD 90.64(free 90.64)
+[qwen_lm lm_freq_sftc_r0_s2023    1222s] saved best (epoch 1) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sftc_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_sftc_r0_s2023    1222s] DONE
+== 2026年 11月 17日 星期二 16:38:44 CST G1 sft rxA
+[qwen_lm lm_freq_sft_rxA_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_sft_rxA_r0_s2023       1s] units rxA: rxA [8, 9, 10, 11, 13, 15, 17, 18, 20, 21, 22, 23, 25, 26, 28, 29, 30, 31] rxB [12, 14, 16, 19, 24, 27]; this stage trains on 24374 packets, selects on 10494
+[qwen_lm lm_freq_sft_rxA_r0_s2023       2s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_sft_rxA_r0_s2023       2s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_sft_rxA_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 4972.38it/s]
+[qwen_lm lm_freq_sft_rxA_r0_s2023       4s] model Qwen3.5-0.8B H=1024 emb_rms=0.0197 tied lm_head True params 752.4 M (trainable 752.43 M, LoRA modules 0) layers 24 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_sft_rxA_r0_s2023      23s] base (untrained) seen_same: n 4000 acc 9.88 free 6.00 loss 2.029
+[qwen_lm lm_freq_sft_rxA_r0_s2023      29s] base (untrained) CR: n 4000 acc 10.38 free 6.38 loss 2.024
+[qwen_lm lm_freq_sft_rxA_r0_s2023      37s]   step 1 loss 2.0533 7.27 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023      38s]   step 2 loss 1.9831 4.06 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023      38s]   step 3 loss 1.8098 3.00 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     139s]   step 100 loss 1.2990 1.10 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     241s] ep 1 train 1.2545 / 10.36%  val 1.1416 / 13.83% (free 13.83)  lr 9.55e-05  210s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_rxA_r0_s2023     249s]   step 200 loss 1.1909 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     337s]   step 300 loss 1.0750 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     426s] ep 2 train 0.9033 / 29.49%  val 0.5851 / 54.08% (free 54.08)  lr 1.00e-04  184s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_rxA_r0_s2023     442s]   step 400 loss 0.5492 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     546s]   step 500 loss 0.3921 1.02 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     626s] ep 3 train 0.3275 / 75.57%  val 0.2513 / 84.30% (free 84.30)  lr 1.00e-04  200s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_rxA_r0_s2023     650s]   step 600 loss 0.1775 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     738s]   step 700 loss 0.1696 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     811s] ep 4 train 0.1654 / 88.83%  val 0.1633 / 88.88% (free 88.88)  lr 1.00e-04  184s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_rxA_r0_s2023     842s]   step 800 loss 0.1338 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023     947s]   step 900 loss 0.1370 1.00 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1011s] ep 5 train 0.1369 / 90.82%  val 0.1555 / 89.65% (free 89.65)  lr 1.00e-04  200s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1051s]   step 1000 loss 0.1163 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1139s]   step 1100 loss 0.1133 0.89 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1196s] ep 6 train 0.1138 / 92.56%  val 0.1564 / 90.39% (free 90.39)  lr 1.00e-04  185s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1243s]   step 1200 loss 0.0856 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1332s]   step 1300 loss 0.0879 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1380s] ep 7 train 0.0899 / 93.89%  val 0.1553 / 90.46% (free 90.46)  lr 1.00e-04  184s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1436s]   step 1400 loss 0.0777 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1525s]   step 1500 loss 0.0782 0.89 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1565s] ep 8 train 0.0791 / 94.62%  val 0.1675 / 90.13% (free 90.13)  lr 1.00e-04  185s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1629s]   step 1600 loss 0.0596 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1717s]   step 1700 loss 0.0610 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1749s] ep 9 train 0.0629 / 95.77%  val 0.1850 / 90.31% (free 90.31)  lr 1.00e-04  184s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1821s]   step 1800 loss 0.0498 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1909s]   step 1900 loss 0.0537 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    1933s] ep 10 train 0.0547 / 96.31%  val 0.2431 / 90.36% (free 90.36)  lr 1.00e-04  184s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2013s]   step 2000 loss 0.0443 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2101s]   step 2100 loss 0.0482 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2117s] ep 11 train 0.0482 / 96.67%  val 0.1965 / 90.78% (free 90.78)  lr 1.00e-04  184s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2204s]   step 2200 loss 0.0422 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2301s] ep 12 train 0.0455 / 96.86%  val 0.2072 / 90.69% (free 90.69)  lr 1.00e-04  184s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2309s]   step 2300 loss 0.0305 1.03 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2412s]   step 2400 loss 0.0382 1.02 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2501s] ep 13 train 0.0416 / 97.15%  val 0.1912 / 90.41% (free 90.41)  lr 1.00e-04  199s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2516s]   step 2500 loss 0.0226 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2604s]   step 2600 loss 0.0264 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2693s] ep 14 train 0.0265 / 98.14%  val 0.2247 / 90.97% (free 90.97)  lr 1.00e-05  193s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2723s]   step 2700 loss 0.0170 1.15 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2811s]   step 2800 loss 0.0169 0.94 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2884s] ep 15 train 0.0180 / 98.72%  val 0.2615 / 90.92% (free 90.92)  lr 1.00e-05  191s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    2915s]   step 2900 loss 0.0144 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3003s]   step 3000 loss 0.0144 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3071s] ep 16 train 0.0145 / 98.96%  val 0.2867 / 91.02% (free 91.02)  lr 1.00e-05  187s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3124s]   step 3100 loss 0.0097 1.18 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3212s]   step 3200 loss 0.0113 0.98 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3269s] ep 17 train 0.0116 / 99.20%  val 0.3135 / 91.05% (free 91.05)  lr 1.00e-05  197s  mem 14.3 GB
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3269s] stop at epoch 17 (early stopping), best 0.1553 at epoch 7
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3411s] eval seen_same 90.24(free 90.24) seen_d34 83.44(free 83.44) CR 90.41(free 90.41) CRD 87.78(free 87.78)
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3412s] saved best (epoch 7) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sft_rxA_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_sft_rxA_r0_s2023    3412s] DONE
+== 2026年 11月 17日 星期二 17:35:38 CST G1 grpo rxB
+[qwen_lm lm_freq_grpo_rxB_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_grpo_rxB_r0_s2023       1s] units rxB: rxA [8, 9, 10, 11, 13, 15, 17, 18, 20, 21, 22, 23, 25, 26, 28, 29, 30, 31] rxB [12, 14, 16, 19, 24, 27]; this stage trains on 8153 packets, selects on 3447
+[qwen_lm lm_freq_grpo_rxB_r0_s2023       2s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_grpo_rxB_r0_s2023       2s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_grpo_rxB_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 4956.08it/s]
+[qwen_lm lm_freq_grpo_rxB_r0_s2023       5s] loaded /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sft_rxA_r0_s2023.pt (epoch 7)
+[qwen_lm lm_freq_grpo_rxB_r0_s2023       5s] model Qwen3.5-0.8B H=1024 emb_rms=0.0197 tied lm_head True params 752.4 M (trainable 752.43 M, LoRA modules 0) layers 24 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_grpo_rxB_r0_s2023      21s] ep 0 (SFT start) val 0.1858 / 89.70% (free 89.70)  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023      29s]   step 1 loss -0.0302 7.49 s/step mem 18.0 GB kl 0.00e+00
+[qwen_lm lm_freq_grpo_rxB_r0_s2023      30s]   step 2 loss -0.0262 4.27 s/step mem 18.0 GB kl 2.46e-05
+[qwen_lm lm_freq_grpo_rxB_r0_s2023      31s]   step 3 loss -0.0230 3.20 s/step mem 18.0 GB kl 3.62e-05
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     125s] ep 1 train -0.0348 / 89.95%  val 0.1725 / 91.64% (free 91.64)  lr 3.00e-06  103s  mem 18.0 GB  reward 0.8896 active 9.7% kl 0.03309  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     164s]   step 100 loss -0.0182 1.08 s/step mem 18.0 GB kl 8.43e-02
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     200s] ep 2 train -0.0166 / 92.22%  val 0.1592 / 92.83% (free 92.83)  lr 3.00e-06  74s  mem 18.0 GB  reward 0.9158 active 6.4% kl 0.09516  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     274s] ep 3 train -0.0122 / 93.29%  val 0.1522 / 93.36% (free 93.36)  lr 3.00e-06  74s  mem 18.0 GB  reward 0.9286 active 5.2% kl 0.13762  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     283s]   step 200 loss -0.0156 1.08 s/step mem 18.0 GB kl 1.66e-01
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     350s] ep 4 train -0.0105 / 94.48%  val 0.1614 / 93.62% (free 93.62)  lr 3.00e-06  75s  mem 18.0 GB  reward 0.9409 active 4.2% kl 0.19495  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     397s]   step 300 loss -0.0082 1.09 s/step mem 18.0 GB kl 2.14e-01
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     425s] ep 5 train -0.0072 / 95.02%  val 0.1800 / 93.88% (free 93.88)  lr 3.00e-06  75s  mem 18.0 GB  reward 0.9468 active 3.3% kl 0.22355  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     514s] ep 6 train -0.0008 / 95.35%  val 0.1902 / 93.91% (free 93.91)  lr 3.00e-06  89s  mem 18.0 GB  reward 0.9515 active 2.4% kl 0.23973  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     532s]   step 400 loss 0.0051 1.08 s/step mem 18.0 GB kl 2.51e-01
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     590s] ep 7 train 0.0013 / 95.65%  val 0.2110 / 94.17% (free 94.17)  lr 3.00e-06  75s  mem 18.0 GB  reward 0.9552 active 1.7% kl 0.25803  * best
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     646s]   step 500 loss 0.0052 1.09 s/step mem 18.0 GB kl 2.68e-01
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     664s] ep 8 train 0.0051 / 95.88%  val 0.2313 / 93.99% (free 93.99)  lr 3.00e-06  75s  mem 18.0 GB  reward 0.9574 active 1.2% kl 0.26671
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     739s] ep 9 train 0.0070 / 95.92%  val 0.2475 / 94.11% (free 94.11)  lr 3.00e-06  75s  mem 18.0 GB  reward 0.9587 active 0.8% kl 0.27413
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     765s]   step 600 loss 0.0078 1.08 s/step mem 18.0 GB kl 2.57e-01
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     813s] ep 10 train 0.0072 / 96.14%  val 0.2554 / 94.14% (free 94.14)  lr 3.00e-06  75s  mem 18.0 GB  reward 0.9606 active 0.7% kl 0.27877
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     813s] stop at epoch 10 (early stopping), best 94.1688 at epoch 7
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     975s] eval seen_same 91.05(free 91.05) seen_d34 86.30(free 86.30) CR 91.64(free 91.64) CRD 90.23(free 90.23)
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     976s] saved best (epoch 7) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_grpo_rxB_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_rxB_r0_s2023     976s] DONE
+== 2026年 11月 17日 星期二 17:51:56 CST G1 grpo rxA
+[qwen_lm lm_freq_grpo_rxA_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_grpo_rxA_r0_s2023       1s] units rxA: rxA [8, 9, 10, 11, 13, 15, 17, 18, 20, 21, 22, 23, 25, 26, 28, 29, 30, 31] rxB [12, 14, 16, 19, 24, 27]; this stage trains on 24374 packets, selects on 10494
+[qwen_lm lm_freq_grpo_rxA_r0_s2023       2s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_grpo_rxA_r0_s2023       2s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_grpo_rxA_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 4814.92it/s]
+[qwen_lm lm_freq_grpo_rxA_r0_s2023       5s] loaded /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sft_rxA_r0_s2023.pt (epoch 7)
+[qwen_lm lm_freq_grpo_rxA_r0_s2023       5s] model Qwen3.5-0.8B H=1024 emb_rms=0.0197 tied lm_head True params 752.4 M (trainable 752.43 M, LoRA modules 0) layers 24 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_grpo_rxA_r0_s2023      32s] ep 0 (SFT start) val 0.1554 / 90.42% (free 90.42)  * best
+[qwen_lm lm_freq_grpo_rxA_r0_s2023      40s]   step 1 loss -0.0728 7.50 s/step mem 18.0 GB kl 0.00e+00
+[qwen_lm lm_freq_grpo_rxA_r0_s2023      41s]   step 2 loss -0.0448 4.27 s/step mem 18.0 GB kl 1.35e-05
+[qwen_lm lm_freq_grpo_rxA_r0_s2023      42s]   step 3 loss -0.0488 3.21 s/step mem 18.0 GB kl 1.59e-05
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     147s]   step 100 loss -0.0358 1.15 s/step mem 18.0 GB kl 1.06e-02
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     272s] ep 1 train -0.0270 / 96.02%  val 0.2394 / 90.47% (free 90.47)  lr 3.00e-06  238s  mem 18.0 GB  reward 0.9528 active 5.4% kl 0.01974  * best
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     284s]   step 200 loss -0.0144 1.38 s/step mem 18.0 GB kl 5.44e-02
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     402s]   step 300 loss -0.0114 1.19 s/step mem 18.0 GB kl 5.17e-02
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     505s] ep 2 train -0.0094 / 96.54%  val 0.2962 / 90.37% (free 90.37)  lr 3.00e-06  234s  mem 18.0 GB  reward 0.9632 active 2.8% kl 0.05208
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     525s]   step 400 loss -0.0036 1.07 s/step mem 18.0 GB kl 6.02e-02
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     633s]   step 500 loss -0.0062 1.08 s/step mem 18.0 GB kl 6.32e-02
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     743s] ep 3 train -0.0048 / 96.89%  val 0.3398 / 90.38% (free 90.38)  lr 3.00e-06  237s  mem 18.0 GB  reward 0.9676 active 2.0% kl 0.06322
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     772s]   step 600 loss -0.0078 1.08 s/step mem 18.0 GB kl 6.45e-02
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     880s]   step 700 loss -0.0029 1.08 s/step mem 18.0 GB kl 7.09e-02
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     964s] ep 4 train -0.0030 / 97.08%  val 0.3834 / 90.36% (free 90.36)  lr 3.00e-06  221s  mem 18.0 GB  reward 0.9700 active 1.7% kl 0.06811
+[qwen_lm lm_freq_grpo_rxA_r0_s2023     964s] stop at epoch 4 (early stopping), best 90.4707 at epoch 1
+[qwen_lm lm_freq_grpo_rxA_r0_s2023    1115s] eval seen_same 90.55(free 90.55) seen_d34 85.35(free 85.35) CR 91.57(free 91.57) CRD 90.23(free 90.23)
+[qwen_lm lm_freq_grpo_rxA_r0_s2023    1116s] saved best (epoch 1) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_grpo_rxA_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_rxA_r0_s2023    1116s] DONE
+== 2026年 11月 17日 星期二 18:10:34 CST G2 sft day1
+[qwen_lm lm_freq_sft_day1_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_sft_day1_r0_s2023       1s] units day1: rxA [8, 9, 10, 11, 13, 15, 17, 18, 20, 21, 22, 23, 25, 26, 28, 29, 30, 31] rxB [12, 14, 16, 19, 24, 27]; this stage trains on 16185 packets, selects on 7015
+[qwen_lm lm_freq_sft_day1_r0_s2023       2s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_sft_day1_r0_s2023       2s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_sft_day1_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 4835.40it/s]
+[qwen_lm lm_freq_sft_day1_r0_s2023       4s] model Qwen3.5-0.8B H=1024 emb_rms=0.0197 tied lm_head True params 752.4 M (trainable 752.43 M, LoRA modules 0) layers 24 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_sft_day1_r0_s2023      26s] base (untrained) seen_same: n 4000 acc 9.88 free 6.00 loss 2.029
+[qwen_lm lm_freq_sft_day1_r0_s2023      32s] base (untrained) CR: n 4000 acc 10.38 free 6.38 loss 2.024
+[qwen_lm lm_freq_sft_day1_r0_s2023      39s]   step 1 loss 2.0140 7.29 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023      40s]   step 2 loss 1.9742 4.07 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023      41s]   step 3 loss 1.8088 3.01 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     126s]   step 100 loss 1.5359 0.95 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     169s] ep 1 train 1.4567 / 10.46%  val 1.1036 / 17.72% (free 17.72)  lr 6.35e-05  136s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_day1_r0_s2023     233s]   step 200 loss 0.9561 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     292s] ep 2 train 0.8368 / 33.62%  val 0.4932 / 64.38% (free 64.38)  lr 1.00e-04  122s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_day1_r0_s2023     332s]   step 300 loss 0.4081 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     414s] ep 3 train 0.3142 / 77.78%  val 0.2068 / 86.32% (free 86.32)  lr 1.00e-04  122s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_day1_r0_s2023     431s]   step 400 loss 0.1988 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     519s]   step 500 loss 0.1775 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     537s] ep 4 train 0.1784 / 88.52%  val 0.2746 / 84.28% (free 84.28)  lr 1.00e-04  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     618s]   step 600 loss 0.1641 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     659s] ep 5 train 0.1558 / 90.49%  val 0.1475 / 90.05% (free 90.05)  lr 1.00e-04  122s  mem 14.3 GB  * best
+[qwen_lm lm_freq_sft_day1_r0_s2023     717s]   step 700 loss 0.1122 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     782s] ep 6 train 0.1122 / 92.65%  val 0.1576 / 90.75% (free 90.75)  lr 1.00e-04  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     815s]   step 800 loss 0.0878 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     904s] ep 7 train 0.0905 / 93.84%  val 0.1725 / 90.78% (free 90.78)  lr 1.00e-04  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023     914s]   step 900 loss 0.0743 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1002s]   step 1000 loss 0.0780 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1026s] ep 8 train 0.0775 / 94.82%  val 0.1744 / 91.02% (free 91.02)  lr 1.00e-04  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1100s]   step 1100 loss 0.0624 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1149s] ep 9 train 0.0635 / 95.66%  val 0.1638 / 91.15% (free 91.15)  lr 1.00e-04  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1199s]   step 1200 loss 0.0493 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1271s] ep 10 train 0.0555 / 96.45%  val 0.1681 / 91.52% (free 91.52)  lr 1.00e-04  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1297s]   step 1300 loss 0.0379 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1393s] ep 11 train 0.0479 / 96.73%  val 0.1933 / 90.18% (free 90.18)  lr 1.00e-04  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1396s]   step 1400 loss 0.0605 0.86 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1484s]   step 1500 loss 0.0297 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1515s] ep 12 train 0.0291 / 98.04%  val 0.1681 / 91.99% (free 91.99)  lr 1.00e-05  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1586s]   step 1600 loss 0.0201 0.93 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1653s] ep 13 train 0.0197 / 98.58%  val 0.1966 / 91.72% (free 91.72)  lr 1.00e-05  138s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1696s]   step 1700 loss 0.0176 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1775s] ep 14 train 0.0176 / 98.74%  val 0.2111 / 91.99% (free 91.99)  lr 1.00e-05  122s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1795s]   step 1800 loss 0.0142 0.88 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1896s]   step 1900 loss 0.0158 0.99 s/step mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1913s] ep 15 train 0.0159 / 98.81%  val 0.2222 / 91.77% (free 91.77)  lr 1.00e-05  138s  mem 14.3 GB
+[qwen_lm lm_freq_sft_day1_r0_s2023    1913s] stop at epoch 15 (early stopping), best 0.1475 at epoch 5
+[qwen_lm lm_freq_sft_day1_r0_s2023    2055s] eval seen_same 88.85(free 88.85) seen_d34 81.86(free 81.86) CR 85.10(free 85.10) CRD 79.69(free 79.69)
+[qwen_lm lm_freq_sft_day1_r0_s2023    2056s] saved best (epoch 5) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sft_day1_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_sft_day1_r0_s2023    2056s] DONE
+== 2026年 11月 17日 星期二 18:44:53 CST G2 grpo day2
+[qwen_lm lm_freq_grpo_day2_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_grpo_day2_r0_s2023       1s] units day2: rxA [8, 9, 10, 11, 13, 15, 17, 18, 20, 21, 22, 23, 25, 26, 28, 29, 30, 31] rxB [12, 14, 16, 19, 24, 27]; this stage trains on 16342 packets, selects on 6926
+[qwen_lm lm_freq_grpo_day2_r0_s2023       2s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_grpo_day2_r0_s2023       2s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_grpo_day2_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  99%|█████████▊| 466/473 [00:00<00:00, 4605.85it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 4651.28it/s]
+[qwen_lm lm_freq_grpo_day2_r0_s2023       5s] loaded /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sft_day1_r0_s2023.pt (epoch 5)
+[qwen_lm lm_freq_grpo_day2_r0_s2023       5s] model Qwen3.5-0.8B H=1024 emb_rms=0.0197 tied lm_head True params 752.4 M (trainable 752.43 M, LoRA modules 0) layers 24 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_grpo_day2_r0_s2023      30s] ep 0 (SFT start) val 0.1847 / 87.60% (free 87.60)  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023      37s]   step 1 loss -0.0607 7.49 s/step mem 18.0 GB kl 0.00e+00
+[qwen_lm lm_freq_grpo_day2_r0_s2023      38s]   step 2 loss -0.0709 4.26 s/step mem 18.0 GB kl 6.74e-05
+[qwen_lm lm_freq_grpo_day2_r0_s2023      39s]   step 3 loss -0.0672 3.20 s/step mem 18.0 GB kl 9.89e-05
+[qwen_lm lm_freq_grpo_day2_r0_s2023     144s]   step 100 loss -0.0374 1.14 s/step mem 18.0 GB kl 9.06e-02
+[qwen_lm lm_freq_grpo_day2_r0_s2023     194s] ep 1 train -0.0337 / 90.22%  val 0.2146 / 90.79% (free 90.79)  lr 3.00e-06  164s  mem 18.0 GB  reward 0.8912 active 9.0% kl 0.10298  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023     284s]   step 200 loss -0.0122 1.25 s/step mem 18.0 GB kl 1.89e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023     355s] ep 2 train -0.0100 / 91.55%  val 0.2758 / 91.00% (free 91.00)  lr 3.00e-06  160s  mem 18.0 GB  reward 0.9126 active 4.1% kl 0.19427  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023     402s]   step 300 loss -0.0033 1.08 s/step mem 18.0 GB kl 2.17e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023     504s] ep 3 train 0.0000 / 92.30%  val 0.3687 / 91.24% (free 91.24)  lr 3.00e-06  148s  mem 18.0 GB  reward 0.9216 active 2.3% kl 0.22679  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023     521s]   step 400 loss -0.0024 1.08 s/step mem 18.0 GB kl 2.24e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023     637s]   step 500 loss 0.0006 1.15 s/step mem 18.0 GB kl 2.41e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023     668s] ep 4 train 0.0012 / 92.79%  val 0.4428 / 91.32% (free 91.32)  lr 3.00e-06  164s  mem 18.0 GB  reward 0.9269 active 1.8% kl 0.24020  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023     763s]   step 600 loss 0.0045 1.08 s/step mem 18.0 GB kl 2.49e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023     816s] ep 5 train 0.0043 / 93.16%  val 0.4738 / 91.38% (free 91.38)  lr 3.00e-06  148s  mem 18.0 GB  reward 0.9309 active 1.2% kl 0.25000  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023     881s]   step 700 loss 0.0066 1.08 s/step mem 18.0 GB kl 2.56e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023     965s] ep 6 train 0.0069 / 93.35%  val 0.5057 / 91.57% (free 91.57)  lr 3.00e-06  148s  mem 18.0 GB  reward 0.9330 active 0.9% kl 0.25500  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023     999s]   step 800 loss 0.0049 1.08 s/step mem 18.0 GB kl 2.62e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1129s] ep 7 train 0.0064 / 93.59%  val 0.6093 / 91.50% (free 91.50)  lr 3.00e-06  164s  mem 18.0 GB  reward 0.9352 active 0.8% kl 0.26194
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1133s]   step 900 loss 0.0082 1.06 s/step mem 18.0 GB kl 2.34e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1241s]   step 1000 loss 0.0077 1.08 s/step mem 18.0 GB kl 2.65e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1277s] ep 8 train 0.0079 / 93.69%  val 0.6643 / 91.65% (free 91.65)  lr 3.00e-06  148s  mem 18.0 GB  reward 0.9366 active 0.7% kl 0.26358  * best
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1359s]   step 1100 loss 0.0085 1.08 s/step mem 18.0 GB kl 2.73e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1425s] ep 9 train 0.0090 / 93.76%  val 0.6441 / 91.63% (free 91.63)  lr 3.00e-06  148s  mem 18.0 GB  reward 0.9376 active 0.5% kl 0.26740
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1484s]   step 1200 loss 0.0092 1.23 s/step mem 18.0 GB kl 2.76e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1589s] ep 10 train 0.0083 / 93.95%  val 0.5779 / 91.51% (free 91.51)  lr 3.00e-06  163s  mem 18.0 GB  reward 0.9390 active 0.6% kl 0.26642
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1610s]   step 1300 loss 0.0077 1.07 s/step mem 18.0 GB kl 2.59e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1718s]   step 1400 loss 0.0084 1.08 s/step mem 18.0 GB kl 2.70e-01
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1737s] ep 11 train 0.0084 / 94.04%  val 0.6520 / 91.61% (free 91.61)  lr 3.00e-06  148s  mem 18.0 GB  reward 0.9400 active 0.3% kl 0.27059
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1737s] stop at epoch 11 (early stopping), best 91.6546 at epoch 8
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1882s] eval seen_same 91.44(free 91.44) seen_d34 87.54(free 87.54) CR 91.90(free 91.90) CRD 89.13(free 89.13)
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1882s] saved best (epoch 8) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_grpo_day2_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_day2_r0_s2023    1882s] DONE
+== 2026年 11月 17日 星期二 19:16:17 CST G2 grpo day1
+[qwen_lm lm_freq_grpo_day1_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_grpo_day1_r0_s2023       1s] units day1: rxA [8, 9, 10, 11, 13, 15, 17, 18, 20, 21, 22, 23, 25, 26, 28, 29, 30, 31] rxB [12, 14, 16, 19, 24, 27]; this stage trains on 16185 packets, selects on 7015
+[qwen_lm lm_freq_grpo_day1_r0_s2023       2s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_grpo_day1_r0_s2023       2s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_grpo_day1_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 4898.87it/s]
+[qwen_lm lm_freq_grpo_day1_r0_s2023       5s] loaded /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_sft_day1_r0_s2023.pt (epoch 5)
+[qwen_lm lm_freq_grpo_day1_r0_s2023       5s] model Qwen3.5-0.8B H=1024 emb_rms=0.0197 tied lm_head True params 752.4 M (trainable 752.43 M, LoRA modules 0) layers 24 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_grpo_day1_r0_s2023      37s] ep 0 (SFT start) val 0.1475 / 90.08% (free 90.08)  * best
+[qwen_lm lm_freq_grpo_day1_r0_s2023      45s]   step 1 loss -0.0785 7.50 s/step mem 18.0 GB kl 0.00e+00
+[qwen_lm lm_freq_grpo_day1_r0_s2023      46s]   step 2 loss -0.0765 4.27 s/step mem 18.0 GB kl 1.15e-05
+[qwen_lm lm_freq_grpo_day1_r0_s2023      47s]   step 3 loss -0.0688 3.21 s/step mem 18.0 GB kl 3.93e-05
+[qwen_lm lm_freq_grpo_day1_r0_s2023     151s]   step 100 loss -0.0381 1.14 s/step mem 18.0 GB kl 4.82e-02
+[qwen_lm lm_freq_grpo_day1_r0_s2023     195s] ep 1 train -0.0341 / 93.62%  val 0.1820 / 91.59% (free 91.59)  lr 3.00e-06  157s  mem 18.0 GB  reward 0.9256 active 7.5% kl 0.05456  * best
+[qwen_lm lm_freq_grpo_day1_r0_s2023     274s]   step 200 loss -0.0144 1.08 s/step mem 18.0 GB kl 1.04e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023     342s] ep 2 train -0.0118 / 94.65%  val 0.2268 / 91.76% (free 91.76)  lr 3.00e-06  147s  mem 18.0 GB  reward 0.9433 active 4.2% kl 0.10483  * best
+[qwen_lm lm_freq_grpo_day1_r0_s2023     394s]   step 300 loss -0.0073 1.13 s/step mem 18.0 GB kl 1.30e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023     504s] ep 3 train -0.0060 / 95.35%  val 0.2923 / 91.73% (free 91.73)  lr 3.00e-06  162s  mem 18.0 GB  reward 0.9514 active 2.8% kl 0.13074
+[qwen_lm lm_freq_grpo_day1_r0_s2023     524s]   step 400 loss -0.0024 1.07 s/step mem 18.0 GB kl 1.43e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023     632s]   step 500 loss -0.0014 1.08 s/step mem 18.0 GB kl 1.54e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023     651s] ep 4 train -0.0014 / 95.76%  val 0.3168 / 91.72% (free 91.72)  lr 3.00e-06  147s  mem 18.0 GB  reward 0.9564 active 1.7% kl 0.15335
+[qwen_lm lm_freq_grpo_day1_r0_s2023     750s]   step 600 loss 0.0008 1.08 s/step mem 18.0 GB kl 1.67e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023     798s] ep 5 train 0.0008 / 96.03%  val 0.4005 / 91.83% (free 91.83)  lr 3.00e-06  147s  mem 18.0 GB  reward 0.9597 active 1.4% kl 0.15984  * best
+[qwen_lm lm_freq_grpo_day1_r0_s2023     884s]   step 700 loss 0.0028 1.32 s/step mem 18.0 GB kl 1.74e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023     961s] ep 6 train 0.0034 / 96.27%  val 0.5087 / 91.76% (free 91.76)  lr 3.00e-06  163s  mem 18.0 GB  reward 0.9622 active 0.7% kl 0.17398
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1002s]   step 800 loss 0.0033 1.08 s/step mem 18.0 GB kl 1.78e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1108s] ep 7 train 0.0040 / 96.35%  val 0.4529 / 91.77% (free 91.77)  lr 3.00e-06  147s  mem 18.0 GB  reward 0.9631 active 0.6% kl 0.17780
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1120s]   step 900 loss 0.0068 1.07 s/step mem 18.0 GB kl 1.61e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1227s]   step 1000 loss 0.0052 1.08 s/step mem 18.0 GB kl 1.77e-01
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1257s] ep 8 train 0.0051 / 96.45%  val 0.4581 / 91.56% (free 91.56)  lr 3.00e-06  150s  mem 18.0 GB  reward 0.9642 active 0.7% kl 0.17731
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1257s] stop at epoch 8 (early stopping), best 91.8318 at epoch 5
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1415s] eval seen_same 90.67(free 90.67) seen_d34 85.28(free 85.28) CR 91.11(free 91.11) CRD 87.68(free 87.68)
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1415s] saved best (epoch 5) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm/weights/lm_freq_grpo_day1_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_day1_r0_s2023    1415s] DONE
+== 2026年 11月 17日 星期二 19:39:55 CST REWARD_DONE
+1112 MiB, 24564 MiB, 1 %
+== 2026年 11月 17日 星期二 19:39:56 CST v3 smoke Qwen3.5-4B sft
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       1s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       1s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights:  24%|██▍       | 176/723 [00:00<00:00, 1677.04it/s]Loading weights:  49%|████▊     | 352/723 [00:00<00:00, 1718.29it/s]Loading weights:  85%|████████▌ | 615/723 [00:00<00:00, 2124.95it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 2143.91it/s]
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      29s] model Qwen3.5-4B H=2560 emb_rms=0.0130 tied lm_head True params 4238.3 M (trainable 32.55 M, LoRA modules 248) layers 32 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      41s] base (untrained) seen_same: n 256 acc 13.67 free 13.67 loss 1.294
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      43s] base (untrained) CR: n 256 acc 7.81 free 7.81 loss 1.320
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      56s]   step 1 loss 1.2427 13.33 s/step mem 12.1 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      59s]   step 2 loss 1.2019 8.17 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      62s]   step 3 loss 1.1909 6.45 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      73s] ep 1 train 1.1739 / 9.38%  val 1.1468 / 14.06% (free 14.06)  lr 2.00e-04  30s  mem 12.4 GB  * best
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      73s] stop at epoch 1 (max_steps), best 1.1468 at epoch 1
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      80s] eval seen_same 14.06(free 14.06) seen_d34 6.25(free 6.25) CR 7.03(free 7.03) CRD 7.81(free 7.81)
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      80s] saved best (epoch 1) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm_v3_smoke/weights/lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      80s] DONE
+== 2026年 11月 17日 星期二 19:41:18 CST v3 smoke Qwen3.5-4B grpo
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       1s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       1s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 11535.83it/s]
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       5s] loaded /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm_v3_smoke/weights/lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023.pt (epoch 1)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       5s] model Qwen3.5-4B H=2560 emb_rms=0.0130 tied lm_head True params 4238.3 M (trainable 32.55 M, LoRA modules 248) layers 32 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      17s] ep 0 (SFT start) val 1.1468 / 14.06% (free 14.06)  * best
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      28s]   step 1 loss -0.0031 10.68 s/step mem 12.7 GB kl 0.00e+00
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      32s]   step 2 loss 0.0044 7.28 s/step mem 13.0 GB kl 5.94e-03
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      36s]   step 3 loss 0.0034 6.14 s/step mem 13.0 GB kl 5.91e-03
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      49s] ep 1 train -0.0018 / 10.29%  val 1.1498 / 9.77% (free 9.77)  lr 3.00e-05  32s  mem 13.0 GB  reward 0.0951 active 55.3% kl 0.00547
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      49s] stop at epoch 1 (max_steps), best 14.0625 at epoch 0
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      56s] eval seen_same 14.06(free 14.06) seen_d34 6.25(free 6.25) CR 7.03(free 7.03) CRD 7.81(free 7.81)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      56s] saved best (epoch 0) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm_v3_smoke/weights/lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023      56s] DONE
+== 2026年 11月 17日 星期二 19:42:17 CST SMOKE_OK Qwen3.5-4B
+== 2026年 11月 17日 星期二 19:42:17 CST 4B freq sft r0
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       1s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       1s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 15541.78it/s]
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023       5s] model Qwen3.5-4B H=2560 emb_rms=0.0130 tied lm_head True params 4238.3 M (trainable 32.55 M, LoRA modules 248) layers 32 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      46s] base (untrained) seen_same: n 4000 acc 9.95 free 9.95 loss 1.299
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      73s] base (untrained) CR: n 4000 acc 10.15 free 10.15 loss 1.311
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      83s]   step 1 loss 1.2427 9.81 s/step mem 12.1 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      86s]   step 2 loss 1.2724 6.41 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023      89s]   step 3 loss 1.2673 5.27 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023     380s]   step 100 loss 1.0413 3.07 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023     681s]   step 200 loss 0.8301 3.04 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023     945s] ep 1 train 0.7436 / 43.94%  val 0.4041 / 71.09% (free 71.09)  lr 2.00e-04  872s  mem 12.4 GB  * best
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    1081s]   step 300 loss 0.3091 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    1396s]   step 400 loss 0.2549 3.11 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    1713s]   step 500 loss 0.2310 3.13 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    1835s] ep 2 train 0.2296 / 84.60%  val 0.2459 / 85.32% (free 85.32)  lr 2.00e-04  890s  mem 12.4 GB  * best
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    2121s]   step 600 loss 0.1707 3.18 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    2437s]   step 700 loss 0.1657 3.17 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    2724s] ep 3 train 0.1640 / 89.00%  val 0.2169 / 85.73% (free 85.73)  lr 2.00e-04  889s  mem 12.4 GB  * best
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    2842s]   step 800 loss 0.1456 3.36 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    3146s]   step 900 loss 0.1335 3.12 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    3463s]   step 1000 loss 0.1353 3.14 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    3616s] ep 4 train 0.1342 / 91.10%  val 0.1608 / 89.38% (free 89.38)  lr 2.00e-04  891s  mem 12.4 GB  * best
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    3871s]   step 1100 loss 0.1004 3.20 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    4188s]   step 1200 loss 0.1018 3.18 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    4521s] ep 5 train 0.1056 / 92.83%  val 0.1427 / 90.60% (free 90.60)  lr 2.00e-04  906s  mem 12.4 GB  * best
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    4596s]   step 1300 loss 0.0765 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    4912s]   step 1400 loss 0.0809 3.13 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    5213s]   step 1500 loss 0.0823 3.07 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    5395s] ep 6 train 0.0816 / 94.41%  val 0.1586 / 90.73% (free 90.73)  lr 2.00e-04  874s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    5605s]   step 1600 loss 0.0575 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    5906s]   step 1700 loss 0.0625 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    6254s] ep 7 train 0.0648 / 95.66%  val 0.1485 / 91.13% (free 91.13)  lr 2.00e-04  859s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    6299s]   step 1800 loss 0.0412 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    6616s]   step 1900 loss 0.0542 3.14 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    6931s]   step 2000 loss 0.0563 3.15 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    7157s] ep 8 train 0.0568 / 96.10%  val 0.1668 / 91.26% (free 91.26)  lr 2.00e-04  903s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    7340s]   step 2100 loss 0.0457 3.04 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    7656s]   step 2200 loss 0.0504 3.12 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    8048s] ep 9 train 0.0499 / 96.58%  val 0.1915 / 91.01% (free 91.01)  lr 2.00e-04  891s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    8063s]   step 2300 loss 0.0584 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    8368s]   step 2400 loss 0.0417 3.05 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    8680s]   step 2500 loss 0.0428 3.09 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    8938s] ep 10 train 0.0432 / 97.03%  val 0.2310 / 91.11% (free 91.11)  lr 2.00e-04  890s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    9089s]   step 2600 loss 0.0363 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    9405s]   step 2700 loss 0.0396 3.11 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    9721s]   step 2800 loss 0.0398 3.13 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023    9828s] ep 11 train 0.0397 / 97.24%  val 0.2061 / 91.13% (free 91.13)  lr 2.00e-04  890s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   10114s]   step 2900 loss 0.0263 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   10415s]   step 3000 loss 0.0243 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   10688s] ep 12 train 0.0232 / 98.43%  val 0.2022 / 92.03% (free 92.03)  lr 2.00e-05  860s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   10808s]   step 3100 loss 0.0125 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   11109s]   step 3200 loss 0.0139 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   11425s]   step 3300 loss 0.0138 3.07 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   11577s] ep 13 train 0.0139 / 99.04%  val 0.2258 / 92.04% (free 92.04)  lr 2.00e-05  890s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   11833s]   step 3400 loss 0.0089 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   12149s]   step 3500 loss 0.0091 3.09 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   12467s] ep 14 train 0.0092 / 99.39%  val 0.2547 / 92.02% (free 92.02)  lr 2.00e-05  889s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   12557s]   step 3600 loss 0.0038 3.01 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   12873s]   step 3700 loss 0.0035 3.13 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   13175s]   step 3800 loss 0.0044 3.08 s/step mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   13357s] ep 15 train 0.0044 / 99.73%  val 0.2689 / 91.92% (free 91.92)  lr 2.00e-05  891s  mem 12.4 GB
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   13357s] stop at epoch 15 (early stopping), best 0.1427 at epoch 5
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   14002s] eval seen_same 90.60(free 90.60) seen_d34 85.50(free 85.50) CR 88.70(free 88.70) CRD 86.34(free 86.34)
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   14002s] saved best (epoch 5) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm4b/weights/lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023   14002s] DONE
+== 2026年 11月 17日 星期二 23:35:41 CST 4B freq grpo r0
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       0s] train rx [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  test rx [0, 1, 2, 3, 4, 5, 6, 7]
+  train (32527, 2, 256) val (13941, 2, 256)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       1s] prompt: '<|im_start|>user\nHere is the preamble of a received WiFi packet: <SIGNAL>\nWhich transmitter (0-9) sent it? Answer with one digit.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       1s] segments [14, 25] slots 1 digits [15, 16, 17, 18, 19, 20, 21, 22, 23, 24] eos 248046
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       2s] data ready (2s)
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16544.54it/s]
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       5s] loaded /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm4b/weights/lm_freq_sft_Qwen3.5-4B_lora16_r0_s2023.pt (epoch 5)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023       5s] model Qwen3.5-4B H=2560 emb_rms=0.0130 tied lm_head True params 4238.3 M (trainable 32.55 M, LoRA modules 248) layers 32 torch 2.6.0+cu124
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023     119s] ep 0 (SFT start) val 0.1427 / 90.60% (free 90.60)  * best
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023     130s]   step 1 loss -0.1115 10.70 s/step mem 12.7 GB kl 0.00e+00
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023     134s]   step 2 loss -0.0790 7.29 s/step mem 13.0 GB kl 6.81e-04
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023     138s]   step 3 loss -0.0692 6.15 s/step mem 13.0 GB kl 3.22e-03
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023     531s]   step 100 loss -0.0194 4.11 s/step mem 13.0 GB kl 6.73e-02
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023     934s]   step 200 loss -0.0124 4.07 s/step mem 13.0 GB kl 7.89e-02
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    1254s] ep 1 train -0.0106 / 96.19%  val 0.2793 / 91.47% (free 91.47)  lr 3.00e-05  1134s  mem 13.0 GB  reward 0.9585 active 3.8% kl 0.08228  * best
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    1428s]   step 300 loss -0.0010 3.88 s/step mem 13.0 GB kl 1.14e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    1816s]   step 400 loss -0.0006 3.88 s/step mem 13.0 GB kl 1.17e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    2204s]   step 500 loss -0.0003 3.88 s/step mem 13.0 GB kl 1.14e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    2333s] ep 2 train -0.0002 / 97.03%  val 0.3440 / 91.69% (free 91.69)  lr 3.00e-05  1079s  mem 13.0 GB  reward 0.9689 active 1.7% kl 0.11451  * best
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    2683s]   step 600 loss 0.0002 3.88 s/step mem 13.0 GB kl 1.24e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    3071s]   step 700 loss 0.0011 3.88 s/step mem 13.0 GB kl 1.26e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    3415s] ep 3 train 0.0014 / 97.33%  val 0.3379 / 91.58% (free 91.58)  lr 3.00e-05  1081s  mem 13.0 GB  reward 0.9725 active 1.2% kl 0.12609
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    3550s]   step 800 loss 0.0037 3.88 s/step mem 13.0 GB kl 1.36e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    3940s]   step 900 loss 0.0017 3.89 s/step mem 13.0 GB kl 1.26e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    4330s]   step 1000 loss 0.0019 3.90 s/step mem 13.0 GB kl 1.27e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    4501s] ep 4 train 0.0020 / 97.41%  val 0.3741 / 91.52% (free 91.52)  lr 3.00e-05  1087s  mem 13.0 GB  reward 0.9735 active 1.2% kl 0.12506
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    4813s]   step 1100 loss 0.0016 3.89 s/step mem 13.0 GB kl 1.43e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    5206s]   step 1200 loss 0.0025 3.92 s/step mem 13.0 GB kl 1.35e-01
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    5592s] ep 5 train 0.0026 / 97.61%  val 0.3406 / 91.39% (free 91.39)  lr 3.00e-05  1090s  mem 13.0 GB  reward 0.9754 active 1.1% kl 0.12794
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    5592s] stop at epoch 5 (early stopping), best 91.6936 at epoch 2
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    6226s] eval seen_same 91.69(free 91.69) seen_d34 88.06(free 88.06) CR 92.35(free 92.35) CRD 89.59(free 89.59)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    6226s] saved best (epoch 2) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm4b/weights/lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    6226s] DONE
+== 2026年 11月 18日 星期三 01:19:29 CST CHAIN_ALL_DONE

@@ -1,0 +1,11 @@
+== 2026年 11月 17日 星期二 11:26:45 CST waiting for pids 400384 412511
+    PID     ELAPSED COMMAND
+ 400384    01:16:07 bash run_freq4_chain.sh
+ 412511       37:26 bash run_reward_chain.sh 400384
+== 2026年 11月 18日 星期三 01:19:46 CST earlier chains ended
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    6226s] saved best (epoch 2) to /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/runs/qwen_lm4b/weights/lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023.pt (bf16)
+[qwen_lm lm_freq_grpo_Qwen3.5-4B_lora16_r0_s2023    6226s] DONE
+== 2026年 11月 18日 星期三 01:19:29 CST CHAIN_ALL_DONE
+1112 MiB, 24564 MiB, 8 %
+24
+== 2026年 11月 18日 星期三 02:25:05 CST BASELINES_DONE

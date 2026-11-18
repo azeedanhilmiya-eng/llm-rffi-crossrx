@@ -1,0 +1,40 @@
+[gpt2_run] gpt2_l6_p16s8_r0_s2023 workdir=/media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/baselines/runs_gpt2 train=[8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31] test=[0, 1, 2, 3, 4, 5, 6, 7]
+[gpt2_run] train 32527 / val 13941 packets
+Loading weights:   0%|          | 0/76 [00:00<?, ?it/s]Loading weights: 100%|██████████| 76/76 [00:00<00:00, 2221.59it/s]
+[transformers] [1mGPT2Model LOAD REPORT[0m from: /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/models/gpt2
+Key                                       | Status     |  | 
+------------------------------------------+------------+--+-
+h.{6, 7, 8, 9, 10, 11}.ln_1.weight        | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.attn.c_attn.weight | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.mlp.c_fc.weight    | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.mlp.c_fc.bias      | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.ln_2.weight        | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.mlp.c_proj.weight  | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.ln_1.bias          | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.ln_2.bias          | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.mlp.c_proj.bias    | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.attn.c_proj.weight | UNEXPECTED |  | 
+h.{6, 7, 8, 9, 10, 11}.attn.c_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[gpt2_run] 31 tokens; trainable 1.12 M of 82.22 M parameters; frozen GPT-2 blocks 6
+ep 1 train loss 1.7415 acc 41.51 | val loss 1.0337 acc 67.18 (0.2 min)
+ep 2 train loss 0.8726 acc 72.48 | val loss 0.6072 acc 82.17 (0.4 min)
+ep 3 train loss 0.5444 acc 83.19 | val loss 0.4730 acc 86.83 (0.6 min)
+ep 4 train loss 0.3897 acc 87.83 | val loss 0.4177 acc 89.33 (0.9 min)
+ep 5 train loss 0.3109 acc 90.35 | val loss 0.3933 acc 90.14 (1.2 min)
+ep 6 train loss 0.2644 acc 91.67 | val loss 0.4017 acc 90.34 (1.5 min)
+ep 7 train loss 0.2313 acc 92.58 | val loss 0.4067 acc 89.91 (1.8 min)
+ep 8 train loss 0.2190 acc 92.98 | val loss 0.4136 acc 90.31 (2.1 min)
+ep 9 train loss 0.1877 acc 94.02 | val loss 0.4188 acc 90.94 (2.4 min)
+ep 10 train loss 0.1743 acc 94.38 | val loss 0.4058 acc 90.75 (2.7 min)
+ep 11 train loss 0.1613 acc 94.78 | val loss 0.4178 acc 90.99 (3.0 min)
+ep 12 train loss 0.1090 acc 96.41 | val loss 0.4012 acc 91.85 (3.3 min)
+ep 13 train loss 0.0925 acc 96.89 | val loss 0.4232 acc 91.96 (3.6 min)
+ep 14 train loss 0.0887 acc 97.01 | val loss 0.4322 acc 91.94 (3.9 min)
+ep 15 train loss 0.0857 acc 97.12 | val loss 0.4496 acc 91.89 (4.2 min)
+Early stopping triggered at epoch 15.
+CR Test Accuracy: 0.7691
+CRD Test Accuracy: 0.7417
+[gpt2_run] wrote /media/lib613/748f1d0b-13d9-4518-9f0e-6e3fd5b6a9e5/rffi_crossrx/baselines/runs_gpt2/gpt2_l6_p16s8_r0_s2023.json (4.3 min)
